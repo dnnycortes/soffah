@@ -51,9 +51,24 @@
 	
 </head>
 <body <?php body_class($class); ?>>
-<header id="headerPrincipal">
-	<h1><a href="<?php bloginfo('url'); ?>"><?php bloginfo( 'name' ); ?></a></h1>
-</header><!-- #headerPrincipal -->
+<header id="main-header">
+	<div class="main-width">
+		<nav id="main-nav">
+			<a href="javascript:void(0);">Menu</a>
+		</nav><!-- #main-nav -->
+		<h1>
+			<p>Fábrica de muebles de alta calidad para hogares y negocios</p>
+			<a href="<?php bloginfo('url'); ?>"><?php bloginfo( 'name' ); ?></a>
+		</h1>
+		<div class="contact-us">
+			<div class="social">
+				<a href="javascript:void(0);" class="facebook">Facebook</a>
+				<a href="javascript:void(0);" class="instagram">Instagram</a>
+			</div><!-- .social -->
+			<p>Llámanos (55) 8114 2040</p>
+		</div><!-- .contact-us -->
+	</div><!-- .main-width -->
+</header><!-- #main-header -->
 <nav id="navPrincipal">
 	<?php wp_nav_menu(array('theme_location' => 'primary'));?>
 </nav><!-- #navPrincipal -->

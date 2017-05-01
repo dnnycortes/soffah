@@ -1,1 +1,31 @@
 // Header
+#main-header{
+	background: 		$main-color;
+	background:			rgba(255,255,255, 0.5);
+	padding:			5px 0;
+	.main-width{
+		text-align:		center;
+		overflow: 		hidden;
+	}
+	h1{
+		display: inline-block;
+		p{
+			margin-bottom: $margin;
+		}
+		a{
+			background: url(images/logo-soffah.png);
+			background-size: 100% auto;
+			width: 130px; // 205px
+			height: 54px; //85
+			text-indent: -99999px;
+			display: inline-block;
+		}
+	}
+	.contact-us{
+		text-align: 			right;
+		float: 					right;
+		p{
+			text-transform: 	uppercase;
+		}
+	}
+}

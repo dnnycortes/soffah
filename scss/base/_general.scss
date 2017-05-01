@@ -13,10 +13,16 @@
 
 body{
 	font-family: 			$main-font;
+	font-weight:			lighter;
+	color:					$sec-color;
 }
 a{
 	text-decoration:		none;
 }
 .clear{
 	clear: both;
+}
+.main-width{
+	width:					980px;
+	margin:					0 auto;
 }

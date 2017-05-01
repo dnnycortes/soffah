@@ -23,7 +23,7 @@ Text Domain: Soffah
 -------------------------------------------------------------------------------*/
 /* Let's default this puppy out
 -------------------------------------------------------------------------------*/
-@import url("https://fonts.googleapis.com/css?family=Abel");
+@import url("https://fonts.googleapis.com/css?family=Quicksand");
 html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, hgroup, menu, nav, section, time, mark, audio, video {
   margin: 0;
   padding: 0;
@@ -247,22 +247,76 @@ mark {
 -------------------------------------------------------------------------------*/
 /* Consider this: www.cloudfour.com/css-media-query-for-mobile-is-fools-gold/ */
 ::-moz-selection {
-  background: #000;
+  background: #6d6e70;
   color: #FFF;
   text-shadow: none; }
 
 ::selection {
-  background: #000;
+  background: #6d6e70;
   color: #FFF;
   text-shadow: none; }
 
 body {
-  font-family: "Abel", sans-serif; }
+  font-family: "Quicksand", sans-serif;
+  font-weight: lighter;
+  color: #6d6e70; }
 
 a {
   text-decoration: none; }
 
 .clear {
   clear: both; }
+
+.main-width {
+  width: 980px;
+  margin: 0 auto; }
+
+#main-header {
+  background: #FFF;
+  background: rgba(255, 255, 255, 0.5);
+  padding: 5px 0; }
+  #main-header .main-width {
+    text-align: center;
+    overflow: hidden; }
+  #main-header h1 {
+    display: inline-block; }
+    #main-header h1 p {
+      margin-bottom: 10px; }
+    #main-header h1 a {
+      background: url(images/logo-soffah.png);
+      background-size: 100% auto;
+      width: 130px;
+      height: 54px;
+      text-indent: -99999px;
+      display: inline-block; }
+  #main-header .contact-us {
+    text-align: right;
+    float: right; }
+    #main-header .contact-us p {
+      text-transform: uppercase; }
+
+#main-nav {
+  float: left; }
+  #main-nav > a {
+    background: url(images/icon-menu.png);
+    background-size: 100% auto;
+    width: 35px;
+    height: 28px;
+    display: inline-block;
+    text-indent: -99999px;
+    margin-top: 20px; }
+
+.social {
+  margin-bottom: 10px; }
+  .social a {
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    background-size: 100% auto;
+    text-indent: 999999px; }
+  .social a.facebook {
+    background: url(images/icon-facebook.png); }
+  .social a.instagram {
+    background: url(images/icon-instagram.png); }
 
 /*# sourceMappingURL=style.css.map */
