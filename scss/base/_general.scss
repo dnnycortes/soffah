@@ -1,0 +1,22 @@
+// Cambia el color de la selección dentro de los navegadores en los navegadores que lo soportan
+
+::-moz-selection{
+	background: 			$sec-color;  // personalizar
+	color: 					$main-color; 
+	text-shadow: 			none;
+}
+::selection{
+	background: 			$sec-color; // personalizar
+	color: 					$main-color; 
+	text-shadow: 			none;
+} 
+
+body{
+	font-family: 			$main-font;
+}
+a{
+	text-decoration:		none;
+}
+.clear{
+	clear: both;
+}

@@ -1,0 +1,17 @@
+// Mixins
+
+// border-radius
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+// transition
+@mixin transition($transition) {
+  -webkit-transition: all ease-in $transition;
+     -moz-transition: all ease-in $transition;
+      -ms-transition: all ease-in $transition;
+          transition: all ease-in $transition;
+}
