@@ -69,8 +69,4 @@
 		</div><!-- .contact-us -->
 	</div><!-- .main-width -->
 </header><!-- #main-header -->
-<nav id="navPrincipal">
-	<?php wp_nav_menu(array('theme_location' => 'primary'));?>
-</nav><!-- #navPrincipal -->
- 
-<?php get_search_form(); ?> 
+

@@ -273,8 +273,12 @@ a {
 
 #main-header {
   background: #FFF;
-  background: rgba(255, 255, 255, 0.5);
-  padding: 5px 0; }
+  background: rgba(255, 255, 255, 0.8);
+  padding: 5px 0;
+  padding-bottom: 15px;
+  position: fixed;
+  z-index: 91;
+  width: 100%; }
   #main-header .main-width {
     text-align: center;
     overflow: hidden; }
@@ -318,5 +322,21 @@ a {
     background: url(images/icon-facebook.png); }
   .social a.instagram {
     background: url(images/icon-instagram.png); }
+
+#wowslider-container3 .ws_bullets {
+  left: 10% !important;
+  top: 50% !important; }
+  #wowslider-container3 .ws_bullets a {
+    display: block !important;
+    margin: 5px 0px !important;
+    background: #6d6e70 !important;
+    padding: 5px !important;
+    box-shadow: 0px 0px 0px 1px #e0dfdf inset !important;
+    -webkit-border-radius: 3px !important;
+    -moz-border-radius: 3px !important;
+    -ms-border-radius: 3px !important;
+    border-radius: 3px !important; }
+    #wowslider-container3 .ws_bullets a.ws_selbull {
+      background: #FFF !important; }
 
 /*# sourceMappingURL=style.css.map */

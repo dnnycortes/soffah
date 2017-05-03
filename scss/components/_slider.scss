@@ -1,0 +1,19 @@
+//  Home Slider
+
+#wowslider-container3{
+	.ws_bullets{
+		left: 				10% !important;
+		top: 				50% !important;
+		a{
+			display: 		block !important;
+			margin: 		5px 0px !important;
+			background:		$sec-color !important;
+			padding:		5px !important;
+			box-shadow:		0px 0px 0px 1px #e0dfdf inset !important;
+			@include		border-radius(3px !important);
+			&.ws_selbull{
+				background:	$main-color !important;
+			}
+		}
+	}
+}

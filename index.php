@@ -6,6 +6,8 @@
 get_header(); ?>
 <!-- Escupe la ruta hacia la carpeta raiz del templete <?php echo get_template_directory_uri(); ?> -->
 
+<?php wowslider(3); ?>
+
 <div id="wrapper">
 	<div id="contenido">
 		<!--EMPIEZA EL LOOP-->
