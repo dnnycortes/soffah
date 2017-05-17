@@ -16,3 +16,27 @@
 		background:			url(images/icon-instagram.png);
 	}
 }
+.btn-scroll{
+	color:					$main-color;
+	text-transform:			uppercase;
+	background:				url(images/icon-scroll.png) no-repeat;
+	background-position:	50% 30px;
+	display:				inline-block;
+	height:					70px;
+	&:hover{
+		color:				$main-color;
+	}
+}
+.btn-close{
+	color:					$main-color;
+	text-transform:			uppercase;
+	background:				url(images/icon-close.png) no-repeat;
+	background-position:	100% 50%;
+	background-size:		26% auto;
+	display:				inline-block;
+	line-height:			30px;
+	padding-right:			30px;
+	&:hover{
+		color:				$main-color;
+	}
+}

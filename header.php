@@ -54,7 +54,7 @@
 <header id="main-header">
 	<div class="main-width">
 		<nav id="main-nav">
-			<a href="javascript:void(0);">Menu</a>
+			<a href="javascript:void(0);" class="menu-toggle">Menu</a>
 		</nav><!-- #main-nav -->
 		<h1>
 			<p>Fábrica de muebles de alta calidad para hogares y negocios</p>
@@ -69,4 +69,9 @@
 		</div><!-- .contact-us -->
 	</div><!-- .main-width -->
 </header><!-- #main-header -->
+<div class="main-menu">
+	<a href="javascript:void(0);" class="btn-close">Cerrar</a>
+	<br class="clear">
+	<?php wp_nav_menu(array('theme_location' => 'primary'));?>
+</div><!-- .main-menu -->
 

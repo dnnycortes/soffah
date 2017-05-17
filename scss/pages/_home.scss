@@ -1,1 +1,20 @@
 // Home
+
+.main-slider{
+	position:				relative;
+	h2{
+		position:			absolute;
+		color:				$main-color;
+		font-size: 			34px;
+		left: 				18%;
+		top:				135px;
+		text-transform:		uppercase;
+		z-index: 			90;
+	}
+	.btn-scroll{
+		position:			absolute;
+		bottom: 			50px;
+		left: 				50%;
+		z-index: 			90;
+	}
+}
