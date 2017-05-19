@@ -11,6 +11,7 @@ get_header(); ?>
 	<h2>Bienvenido</h2>
 	<a href="#btn-scroll" class="btn-scroll" id="btn-scroll">Scroll</a>
 </div><!-- .main-slider -->
+<div class="divider home"></div>
 
 <div id="wrapper">
 	<div id="contenido">
@@ -31,6 +32,16 @@ get_header(); ?>
 					<h3><?php echo get_cat_name(5);?></h3>
 				</div><!-- .product -->
 			</div><!-- .home-products -->
+			<div class="home-pasion">
+				<div class="main-width">
+					<h2>Pasión</h2>
+				</div><!-- .main-width -->
+			</div><!-- .home-pasion -->
+			<div class="home-proyectos">
+				<div class="main-width">
+					<h2>Proyectos</h2>
+				</div><!-- .main-width -->
+			</div><!-- .home-proyectos -->
 		<?php endwhile; else: ?>
 			<p><?php _e('Lo sentimos, ningún post cumple con los criterios de búsqueda.'); ?></p>
 		<?php endif; ?>

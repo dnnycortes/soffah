@@ -10,7 +10,10 @@
 	color: 					$main-color; 
 	text-shadow: 			none;
 } 
-
+body, html{
+	height: 				100%;
+	position:				relative;
+}
 body{
 	font-family: 			$main-font;
 	font-weight:			lighter;

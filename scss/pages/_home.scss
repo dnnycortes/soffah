@@ -67,3 +67,33 @@
 		transform: 						scale(1.1);
 	}
 }
+
+.home-pasion{
+	background:							url(images/fondo-home-pasion.jpg) no-repeat center;
+	min-height:							500px;
+	background-attachment:				fixed;
+	background-size:					cover;
+	padding:							$padding*6 0;
+	h2{
+		font-size: 						34px;
+		text-transform: 				uppercase;
+		color:							$main-color;
+		font-weight: 					normal;
+	}
+
+}
+
+
+.home-proyectos{
+	background:							url(images/fondo-home-proyectos.jpg) no-repeat center;
+	min-height:							500px;
+	background-attachment:				fixed;
+	background-size:					cover;
+	padding:							$padding*6 0;
+	h2{
+		font-size: 						34px;
+		text-transform: 				uppercase;
+		color:							$main-color;
+		font-weight: 					normal;
+	}
+}

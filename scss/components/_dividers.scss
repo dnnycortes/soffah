@@ -1,0 +1,10 @@
+// Dividers
+
+.divider{
+	background:							$sec-color no-repeat 50% 50%;
+	background-size:					55% auto;
+	height:								100px;
+	&.home{
+		background-image:				url(images/divider-home.png);
+	}
+}

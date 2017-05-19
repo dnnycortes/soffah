@@ -256,6 +256,10 @@ mark {
   color: #FFF;
   text-shadow: none; }
 
+body, html {
+  height: 100%;
+  position: relative; }
+
 body {
   font-family: "Quicksand", sans-serif;
   font-weight: lighter;
@@ -380,6 +384,13 @@ a {
     #wowslider-container3 .ws_bullets a.ws_selbull {
       background: #FFF !important; }
 
+.divider {
+  background: #6d6e70 no-repeat 50% 50%;
+  background-size: 55% auto;
+  height: 100px; }
+  .divider.home {
+    background-image: url(images/divider-home.png); }
+
 .main-slider {
   position: relative; }
   .main-slider h2 {
@@ -435,5 +446,29 @@ a {
   .home-products .product:hover img {
     -webkit-transform: scale(1.1);
     transform: scale(1.1); }
+
+.home-pasion {
+  background: url(images/fondo-home-pasion.jpg) no-repeat center;
+  min-height: 500px;
+  background-attachment: fixed;
+  background-size: cover;
+  padding: 60px 0; }
+  .home-pasion h2 {
+    font-size: 34px;
+    text-transform: uppercase;
+    color: #FFF;
+    font-weight: normal; }
+
+.home-proyectos {
+  background: url(images/fondo-home-proyectos.jpg) no-repeat center;
+  min-height: 500px;
+  background-attachment: fixed;
+  background-size: cover;
+  padding: 60px 0; }
+  .home-proyectos h2 {
+    font-size: 34px;
+    text-transform: uppercase;
+    color: #FFF;
+    font-weight: normal; }
 
 /*# sourceMappingURL=style.css.map */
