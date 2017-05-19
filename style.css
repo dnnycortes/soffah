@@ -385,15 +385,55 @@ a {
   .main-slider h2 {
     position: absolute;
     color: #FFF;
-    font-size: 34px;
-    left: 18%;
+    font-size: 40px;
+    left: 12%;
     top: 135px;
     text-transform: uppercase;
-    z-index: 90; }
+    z-index: 90;
+    font-weight: normal; }
   .main-slider .btn-scroll {
     position: absolute;
-    bottom: 50px;
+    bottom: 30px;
     left: 50%;
     z-index: 90; }
+
+.home-products {
+  position: relative;
+  min-height: 500px;
+  overflow: hidden;
+  background: #1d1812; }
+  .home-products h2 {
+    font-size: 34px;
+    text-transform: uppercase;
+    color: #FFF;
+    position: absolute;
+    left: 12%;
+    top: 60px;
+    z-index: 1;
+    font-weight: normal; }
+  .home-products .product {
+    width: 33.33%;
+    float: left;
+    position: relative;
+    overflow: hidden; }
+    .home-products .product img {
+      width: 100%;
+      -webkit-transition: all 1s ease;
+      transition: all 1s ease;
+      margin-bottom: 0; }
+    .home-products .product h3 {
+      position: absolute;
+      z-index: 1;
+      top: 125px;
+      left: 15%;
+      font-size: 24px;
+      color: #FFF;
+      text-transform: uppercase;
+      font-weight: normal; }
+    .home-products .product.tapiceria h3 {
+      left: 36%; }
+  .home-products .product:hover img {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1); }
 
 /*# sourceMappingURL=style.css.map */
