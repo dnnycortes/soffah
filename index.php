@@ -31,21 +31,11 @@ get_header(); ?>
 					<h3><?php echo get_cat_name(5);?></h3>
 				</div><!-- .product -->
 			</div><!-- .home-products -->
-			<div class="entry">
-				<h2><a href="<?php the_permalink(); ?>"></a></h2>
-				<div class="entry-body">
-					<?php the_content(); ?>
-				</div>
-			</div>	
 		<?php endwhile; else: ?>
 			<p><?php _e('Lo sentimos, ningún post cumple con los criterios de búsqueda.'); ?></p>
 		<?php endif; ?>
 		<!--TERMINA EL LOOP-->
 	</div><!-- #contenido -->
-	
-	<aside id="asidePrincipal">
-		<?php if (dynamic_sidebar('sidebar-widgets')) : else : endif; ?>
-	</aside><!-- #asidePrincipal -->
 	
 </div><!-- #wrapper -->
 <?php get_footer(); ?>
