@@ -42,6 +42,14 @@ get_header(); ?>
 					<h2>Proyectos</h2>
 				</div><!-- .main-width -->
 			</div><!-- .home-proyectos -->
+			<div id="contacto">
+				<div class="main-width">
+					<h2>Contacto</h2>
+					<div id="contact-form">
+						<?php wd_form_maker(7, "embedded"); ?>
+					</div><!-- #contact-form -->
+				</div><!-- .main-width -->
+			</div><!-- #contacto -->
 		<?php endwhile; else: ?>
 			<p><?php _e('Lo sentimos, ningún post cumple con los criterios de búsqueda.'); ?></p>
 		<?php endif; ?>

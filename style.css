@@ -326,12 +326,16 @@ a {
   padding: 10px; }
   .main-menu .btn-close {
     float: right; }
-  .main-menu .menu ul li a {
+  .main-menu .menu li a {
     color: #FFF;
     text-transform: uppercase;
     font-size: 16px; }
-    .main-menu .menu ul li a:hover {
+    .main-menu .menu li a:hover {
       color: #FFF; }
+
+#main-footer {
+  background: #2e2f2f;
+  border-top: 12px solid #ed1c24; }
 
 .social {
   margin-bottom: 10px; }
@@ -470,5 +474,47 @@ a {
     text-transform: uppercase;
     color: #FFF;
     font-weight: normal; }
+
+#contacto {
+  background: #6d6e70;
+  padding: 60px 0; }
+  #contacto h2 {
+    font-size: 34px;
+    text-transform: uppercase;
+    color: #FFF;
+    font-weight: normal; }
+  #contacto .fm-form-container.fm-theme1 .fm-form .button-submit {
+    background: black !important;
+    border: 0 !important;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    border-radius: 5px; }
+
+.subcategory {
+  min-height: 500px;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 60px 0; }
+  .subcategory h2 {
+    font-size: 34px;
+    text-transform: uppercase;
+    color: #FFF;
+    font-weight: normal; }
+  .subcategory.tapiceria {
+    background-image: url(images/fondo-productos-tapiceria.jpg);
+    padding-top: 120px;
+    min-height: 485px; }
+    .subcategory.tapiceria h3 {
+      color: #FFF;
+      text-transform: uppercase;
+      font-weight: normal;
+      margin-bottom: 10px; }
+  .subcategory.carpinteria {
+    background-image: url(images/fondo-productos-carpinteria.jpg); }
+  .subcategory.superficie {
+    background-image: url(images/fondo-productos-superficie.jpg); }
 
 /*# sourceMappingURL=style.css.map */

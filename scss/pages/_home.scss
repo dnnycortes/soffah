@@ -97,3 +97,20 @@
 		font-weight: 					normal;
 	}
 }
+
+
+#contacto{
+	background:							$sec-color;
+	padding:							$padding*6 0;
+	h2{
+		font-size: 						34px;
+		text-transform: 				uppercase;
+		color:							$main-color;
+		font-weight: 					normal;
+	}
+	.fm-form-container.fm-theme1 .fm-form .button-submit{
+		background:						darken($sec-color, 100%) !important;
+		border:							0 !important;
+		@include						border-radius(5px);
+	}
+}

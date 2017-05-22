@@ -4,8 +4,11 @@
  *
  */
 ?>
-<footer id="footerPrincipal"> 
-</footer><!-- #footerPrincipal -->
+<footer id="main-footer"> 
+	<div class="main-width">
+		Footer
+	</div><!-- .main-width -->
+</footer><!-- #main-footer -->
 <?php wp_footer(); ?>
 </body>
 </html>

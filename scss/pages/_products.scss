@@ -1,0 +1,33 @@
+// Products
+
+.subcategory{
+	min-height:							500px;
+	background-attachment:				fixed;
+	background-size:					cover;
+	background-repeat:					no-repeat;
+	background-position:				center;
+	padding:							$padding*6 0;
+	h2{
+		font-size: 						34px;
+		text-transform: 				uppercase;
+		color:							$main-color;
+		font-weight: 					normal;
+	}
+	&.tapiceria{
+		background-image:				url(images/fondo-productos-tapiceria.jpg);
+		padding-top:					$padding*12;
+		min-height: 					485px;
+		h3{
+			color:						$main-color;
+			text-transform: 			uppercase;
+			font-weight: 				normal;
+			margin-bottom: 				10px;
+		}
+	}
+	&.carpinteria{
+		background-image:				url(images/fondo-productos-carpinteria.jpg);
+	}
+	&.superficie{
+		background-image:				url(images/fondo-productos-superficie.jpg);
+	}
+}
