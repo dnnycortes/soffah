@@ -61,11 +61,12 @@
 			<a href="<?php bloginfo('url'); ?>"><?php bloginfo( 'name' ); ?></a>
 		</h1>
 		<div class="contact-us">
-			<div class="social">
+			<!--<div class="social">
 				<a href="javascript:void(0);" class="facebook">Facebook</a>
 				<a href="javascript:void(0);" class="instagram">Instagram</a>
-			</div><!-- .social -->
-			<p>Llámanos (55) 8114 2040</p>
+			</div> --> <!-- .social -->
+			<br><br>
+			<p>Llámanos +52 (55) 9000 3803</p>
 		</div><!-- .contact-us -->
 	</div><!-- .main-width -->
 </header><!-- #main-header -->

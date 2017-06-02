@@ -291,7 +291,7 @@ a {
     #main-header h1 p {
       margin-bottom: 10px; }
     #main-header h1 a {
-      background: url(images/logo-soffah.png);
+      background: url(images/logo-soffah.png) no-repeat;
       background-size: 100% auto;
       width: 130px;
       height: 54px;
@@ -372,10 +372,10 @@ a {
   .btn-close:hover {
     color: #FFF; }
 
-#wowslider-container3 .ws_bullets {
+#wowslider-container4 .ws_bullets {
   left: 10% !important;
   top: 50% !important; }
-  #wowslider-container3 .ws_bullets a {
+  #wowslider-container4 .ws_bullets a {
     display: block !important;
     margin: 5px 0px !important;
     background: #6d6e70 !important;
@@ -385,7 +385,7 @@ a {
     -moz-border-radius: 3px !important;
     -ms-border-radius: 3px !important;
     border-radius: 3px !important; }
-    #wowslider-container3 .ws_bullets a.ws_selbull {
+    #wowslider-container4 .ws_bullets a.ws_selbull {
       background: #FFF !important; }
 
 .divider {
@@ -490,6 +490,8 @@ a {
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
     border-radius: 5px; }
+  #contacto .fm-form .wdform-label-section {
+    display: none; }
 
 .subcategory {
   min-height: 500px;
