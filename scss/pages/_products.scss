@@ -7,11 +7,13 @@
 	background-repeat:					no-repeat;
 	background-position:				center;
 	padding:							$padding*6 0;
+	overflow:							hidden;
 	h2{
 		font-size: 						34px;
 		text-transform: 				uppercase;
 		color:							$main-color;
 		font-weight: 					normal;
+		margin-bottom:					$margin*4;
 	}
 	&.tapiceria{
 		background-image:				url(images/fondo-productos-tapiceria.jpg);
@@ -29,5 +31,61 @@
 	}
 	&.superficie{
 		background-image:				url(images/fondo-productos-superficie.jpg);
+	}
+	.product{
+		width: 							33.33%;
+		float: 							left;
+		text-align:						center;
+		margin-bottom:					$margin*7;
+		p{
+			color:						$main-color;
+			text-transform: 			uppercase;
+			font-size: 					18px;
+		}
+		img{
+			width: 						17%;
+			margin-bottom:				$margin;
+		}
+		&.loveseats{
+			img{
+				width: 					25%;
+			}
+		}
+		&.sofas{
+			img{
+				width: 					31%;
+			}
+		}
+		&.salas{
+			img{
+				width: 					65%;
+			}
+		}
+		&.cabeceras{
+			img{
+				width: 					20%;
+			}
+		}
+		&.taburetes{
+			img{
+				width: 					16%;
+			}
+		}
+		&.libreros{
+			img{
+				width: 					12%;
+			}
+		}
+		&.mesas{
+			padding-top:				$padding*3;
+			img{
+				width: 					33%;
+			}
+		}
+		&.recamaras{
+			img{
+				width: 					35%;
+			}
+		}
 	}
 }
