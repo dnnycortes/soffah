@@ -39,3 +39,17 @@
 		}
 	}
 }
+
+.breadcrumb{
+	overflow:							hidden;
+	li{
+		color:							$main-color;
+		text-transform:					uppercase;
+		float: 							left;
+		margin-right:					5px;
+		a{
+			color:						$main-color;
+			margin-bottom:				10px;
+		}
+	}
+}

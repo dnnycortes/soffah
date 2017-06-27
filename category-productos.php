@@ -13,10 +13,10 @@ get_header(); ?>
 			<div class="main-width">
 				<h3>Productos /</h3>
 				<h2>Tapicería</h2>
-				<div class="product">
+				<a class="product" href="javascript:void(0);">
 					<img src="<?php echo get_template_directory_uri(); ?>/images/icon-tapiceria-sillones.png">
 					<p>Sillones</p>
-				</div><!-- .product -->
+				</a><!-- .product -->
 				<div class="product loveseats">
 					<img src="<?php echo get_template_directory_uri(); ?>/images/icon-tapiceria-loveseats.png">
 					<p>Love Seats</p>

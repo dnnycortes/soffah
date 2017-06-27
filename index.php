@@ -5,6 +5,8 @@
  */
 get_header(); ?>
 <!-- Escupe la ruta hacia la carpeta raiz del templete <?php echo get_template_directory_uri(); ?> -->
+
+
 <div class="main-slider">
 	<div class="slider-widget"><?php wowslider(4); ?></div>
 	<h2>Bienvenido</h2>

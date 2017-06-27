@@ -1,0 +1,111 @@
+// Sillones
+
+.sillones{
+	min-height:							400px;
+	background-attachment:				fixed;
+	background-size:					cover;
+	background-repeat:					no-repeat;
+	background-position:				center;
+	padding:							$padding*6 0;
+	padding-top:						$padding*12;
+	background-image:					url(images/fondo-tapiceria-sillones.jpg);
+	position:							relative;
+	.title{
+		text-transform: 				uppercase;
+		font-weight: 					normal;
+		color:							$main-color;
+		position:						absolute;
+		bottom:							10%;
+		h2{
+			margin-bottom:				$margin*2;
+			font-size: 					32px;
+		}
+		img{
+			width: 						50%;
+			margin-left: 				65px;
+		}
+	}
+}
+
+
+.products-catalogue{
+	background:							$main-color;
+	overflow:							hidden;
+	padding:							$padding*3 0;
+	.product-thumb{
+		width:							33.33%;
+		float: 							left;
+		h2{
+			color:						$sec-color;
+		}
+		img{
+			width: 						80%;
+		}
+	}
+}
+
+
+// Single Sillones
+.single-product{
+	padding-top:						$padding*12;
+	.breadcrumb{
+		margin-bottom: 					$margin*3;
+		a, li{
+			color:						$sec-color;
+		}
+	}	
+	.main-content{
+		width: 							100%;
+		overflow: 						hidden;
+		padding-bottom:					$padding*4;
+	}		
+	.info{
+		float:							left;
+		width: 							29%;
+		padding-right:					1%;
+		h2{
+			font-size: 					32px;
+			font-weight: 				normal;
+			margin-bottom:				$margin*2;
+		}
+		p{
+			margin-bottom:				$margin*10;
+		}
+		img{
+			width: 						80%;
+		}
+	}
+	.gallery{
+		float: 							left;
+		width: 							69%;
+		padding-left:					1%;
+		.main-img{
+			width: 						100%;
+			img{
+				width: 					50%;
+			}
+		}
+		ul{
+			overflow: 					hidden;
+			li{
+				width: 					150px;
+				height: 				150px;
+				border:					1px solid $sec-color;
+				float: 					left;
+				margin-right: 			8px;
+				a{
+					text-align:			center;
+					display: 			inline-block;
+					width: 				100%;
+					height: 			100%;
+				}
+				img{
+					height: 			100%;
+				}
+				&.active{
+					border:				4px solid lighten($sec-color, 50%);	
+				}
+			}
+		}
+	}
+}

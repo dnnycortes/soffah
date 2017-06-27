@@ -333,6 +333,17 @@ a {
     .main-menu .menu li a:hover {
       color: #FFF; }
 
+.breadcrumb {
+  overflow: hidden; }
+  .breadcrumb li {
+    color: #FFF;
+    text-transform: uppercase;
+    float: left;
+    margin-right: 5px; }
+    .breadcrumb li a {
+      color: #FFF;
+      margin-bottom: 10px; }
+
 #main-footer {
   background: #2e2f2f;
   border-top: 12px solid #ed1c24; }
@@ -395,25 +406,22 @@ a {
   .divider.home {
     background-image: url(images/divider-home.png); }
 
-.main-slider {
-  position: relative; }
-  .main-slider h2 {
-    position: absolute;
-    color: #FFF;
-    font-size: 40px;
-    left: 12%;
-    top: 135px;
-    text-transform: uppercase;
-    z-index: 90;
-    font-weight: normal; }
-  .main-slider .btn-scroll {
-    position: absolute;
-    bottom: 30px;
-    left: 50%;
-    z-index: 90; }
+.main-slider h2 {
+  position: absolute;
+  color: #FFF;
+  font-size: 40px;
+  left: 12%;
+  top: 135px;
+  text-transform: uppercase;
+  z-index: 90;
+  font-weight: normal; }
+.main-slider .btn-scroll {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  z-index: 90; }
 
 .home-products {
-  position: relative;
   min-height: 500px;
   overflow: hidden;
   background: #1d1812; }
@@ -550,5 +558,88 @@ a {
         width: 33%; }
     .subcategory .product.recamaras img {
       width: 35%; }
+
+.sillones {
+  min-height: 400px;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 60px 0;
+  padding-top: 120px;
+  background-image: url(images/fondo-tapiceria-sillones.jpg);
+  position: relative; }
+  .sillones .title {
+    text-transform: uppercase;
+    font-weight: normal;
+    color: #FFF;
+    position: absolute;
+    bottom: 10%; }
+    .sillones .title h2 {
+      margin-bottom: 20px;
+      font-size: 32px; }
+    .sillones .title img {
+      width: 50%;
+      margin-left: 65px; }
+
+.products-catalogue {
+  background: #FFF;
+  overflow: hidden;
+  padding: 30px 0; }
+  .products-catalogue .product-thumb {
+    width: 33.33%;
+    float: left; }
+    .products-catalogue .product-thumb h2 {
+      color: #6d6e70; }
+    .products-catalogue .product-thumb img {
+      width: 80%; }
+
+.single-product {
+  padding-top: 120px; }
+  .single-product .breadcrumb {
+    margin-bottom: 30px; }
+    .single-product .breadcrumb a, .single-product .breadcrumb li {
+      color: #6d6e70; }
+  .single-product .main-content {
+    width: 100%;
+    overflow: hidden;
+    padding-bottom: 40px; }
+  .single-product .info {
+    float: left;
+    width: 29%;
+    padding-right: 1%; }
+    .single-product .info h2 {
+      font-size: 32px;
+      font-weight: normal;
+      margin-bottom: 20px; }
+    .single-product .info p {
+      margin-bottom: 100px; }
+    .single-product .info img {
+      width: 80%; }
+  .single-product .gallery {
+    float: left;
+    width: 69%;
+    padding-left: 1%; }
+    .single-product .gallery .main-img {
+      width: 100%; }
+      .single-product .gallery .main-img img {
+        width: 50%; }
+    .single-product .gallery ul {
+      overflow: hidden; }
+      .single-product .gallery ul li {
+        width: 150px;
+        height: 150px;
+        border: 1px solid #6d6e70;
+        float: left;
+        margin-right: 8px; }
+        .single-product .gallery ul li a {
+          text-align: center;
+          display: inline-block;
+          width: 100%;
+          height: 100%; }
+        .single-product .gallery ul li img {
+          height: 100%; }
+        .single-product .gallery ul li.active {
+          border: 4px solid #eeeeee; }
 
 /*# sourceMappingURL=style.css.map */

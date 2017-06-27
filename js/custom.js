@@ -27,4 +27,13 @@ jQuery(function($){
       }
    });
 
+
+    // Products basic gallery
+    $('.gallery li a').click(function(){
+      $('.gallery li a').parent().removeClass('active');
+      $(this).parent().addClass('active');
+      var nuevaImg = $(this).find('img').attr('src');
+      $('.gallery .main-img img').attr('src', nuevaImg);
+    });
+
 });
