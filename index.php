@@ -17,7 +17,6 @@ get_header(); ?>
 <div id="wrapper">
 	<div id="contenido">
 		<!--EMPIEZA EL LOOP-->
-		<?php if(have_posts()) : while(have_posts()) : the_post(); ?>
 			<div class="home-products">
 				<h2><?php
 					$cat = get_term_by( 'slug', 'productos', 'category');
@@ -48,11 +47,13 @@ get_header(); ?>
 			<div class="home-pasion">
 				<div class="main-width">
 					<h2>Pasión</h2>
+					<p>En Soffah nos encanta lo que fabricamos y lo hacemos con pasión. Sumando nuestra experiencia y los materiales que ocupamos ofrecemos productos de excelente calidad.</p>
 				</div><!-- .main-width -->
 			</div><!-- .home-pasion -->
 			<div class="home-proyectos">
 				<div class="main-width">
 					<h2>Proyectos</h2>
+					<p>Realizamos proyectos especiales y a la medida como pueden ser: lobbys, cafés, restaurantes, oficinas, etc.</p>
 				</div><!-- .main-width -->
 			</div><!-- .home-proyectos -->
 			<div id="contacto">
@@ -63,9 +64,6 @@ get_header(); ?>
 					</div><!-- #contact-form -->
 				</div><!-- .main-width -->
 			</div><!-- #contacto -->
-		<?php endwhile; else: ?>
-			<p><?php _e('Lo sentimos, ningún post cumple con los criterios de búsqueda.'); ?></p>
-		<?php endif; ?>
 		<!--TERMINA EL LOOP-->
 	</div><!-- #contenido -->
 	

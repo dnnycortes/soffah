@@ -29,10 +29,11 @@ jQuery(function($){
 
 
     // Products basic gallery
-    $('.gallery li a').click(function(){
-      $('.gallery li a').parent().removeClass('active');
+    $('.gallery p img').wrap('<div></div>');
+    $('.gallery p img').click(function(){
+      $('.gallery p img').parent().removeClass('active');
       $(this).parent().addClass('active');
-      var nuevaImg = $(this).find('img').attr('src');
+      var nuevaImg = $(this).attr('src');
       $('.gallery .main-img img').attr('src', nuevaImg);
     });
 

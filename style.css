@@ -469,7 +469,11 @@ a {
     font-size: 34px;
     text-transform: uppercase;
     color: #FFF;
-    font-weight: normal; }
+    font-weight: normal;
+    margin-bottom: 150px; }
+  .home-pasion p {
+    color: #FFF;
+    font-size: 20px; }
 
 .home-proyectos {
   background: url(images/fondo-home-proyectos.jpg) no-repeat center;
@@ -481,7 +485,11 @@ a {
     font-size: 34px;
     text-transform: uppercase;
     color: #FFF;
-    font-weight: normal; }
+    font-weight: normal;
+    margin-bottom: 150px; }
+  .home-proyectos p {
+    color: #FFF;
+    font-size: 20px; }
 
 #contacto {
   background: #6d6e70;
@@ -624,6 +632,21 @@ a {
       width: 100%; }
       .single-product .gallery .main-img img {
         width: 50%; }
+    .single-product .gallery p {
+      overflow: hidden; }
+      .single-product .gallery p div {
+        width: 150px;
+        height: 150px;
+        float: left;
+        margin-right: 8px;
+        border: 1px solid #6d6e70;
+        cursor: pointer;
+        text-align: center; }
+        .single-product .gallery p div img {
+          width: auto;
+          height: 100%; }
+        .single-product .gallery p div.active {
+          border: 4px solid #eeeeee; }
     .single-product .gallery ul {
       overflow: hidden; }
       .single-product .gallery ul li {

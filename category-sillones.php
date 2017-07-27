@@ -24,18 +24,16 @@ get_header(); ?>
 		</div><!-- .sillones -->
 		<div class="products-catalogue">
 			<div class="main-width">
-				<a class="product-thumb" href="javascript:void(0);">
-					<h2>Señorial I</h2>
-					<img src="<?php echo get_template_directory_uri(); ?>/images/products/sillones/senorial.jpg">
-				</a><!-- .product-thumb -->
-				<a class="product-thumb" href="javascript:void(0);">
-					<h2>Vallarta</h2>
-					<img src="<?php echo get_template_directory_uri(); ?>/images/products/sillones/vallarta.jpg">
-				</a><!-- .product-thumb -->
-				<a class="product-thumb" href="javascript:void(0);">
-					<h2>Vallarta</h2>
-					<img src="<?php echo get_template_directory_uri(); ?>/images/products/sillones/vallarta.jpg">
-				</a><!-- .product-thumb -->
+				<!--EMPIEZA EL LOOP-->
+				<?php if(have_posts()) : while(have_posts()) : the_post(); ?>
+					<a class="product-thumb" href="javascript:void(0);">
+						<h2><?php the_title(); ?> </h2>
+						<img src="<?php echo get_template_directory_uri(); ?>/images/products/sillones/senorial.jpg">
+					</a>
+				<?php endwhile; else: ?>
+					<p><?php _e('Lo sentimos, ningún post cumple con los criterios de búsqueda.'); ?></p>
+				<?php endif; ?>
+				<!--TERMINA EL LOOP-->
 			</div><!-- .main-width -->
 		</div><!-- .products-catalogue -->
 		<div id="contacto">

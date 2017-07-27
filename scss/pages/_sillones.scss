@@ -85,6 +85,25 @@
 				width: 					50%;
 			}
 		}
+		p{
+			overflow: 					hidden;
+			div{
+				width: 					150px;
+				height: 				150px;
+				float: 					left;
+				margin-right: 			8px;
+				border:					1px solid $sec-color;
+				cursor: 				pointer;
+				text-align: 			center;
+				img{
+					width: 				auto;
+					height: 			100%;
+				}
+				&.active{
+					border:				4px solid lighten($sec-color, 50%);
+				}
+			}
+		}
 		ul{
 			overflow: 					hidden;
 			li{
