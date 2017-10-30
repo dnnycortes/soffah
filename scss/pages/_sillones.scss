@@ -25,6 +25,27 @@
 			margin-left: 				65px;
 		}
 	}
+	&.loveseats{
+		background-image: 				url(images/fondo-tapiceria-loveseats.jpg);
+	}
+	&.sofas{
+		background-image: 				url(images/fondo-tapiceria-sofas.jpg);
+	}
+	&.cabeceras{
+		background-image: 				url(images/fondo-tapiceria-cabeceras.jpg);
+	}
+	&.taburetes{
+		background-image: 				url(images/fondo-tapiceria-taburetes.jpg);
+	}
+	&.libreros{
+		background-image: 				url(images/fondo-carpinteria-libreros.jpg);
+	}
+	&.mesas{
+		background-image: 				url(images/fondo-carpinteria-mesas.jpg);
+	}
+	&.recamaras{
+		background-image: 				url(images/fondo-carpinteria-recamaras.jpg);
+	}
 }
 
 
@@ -73,6 +94,7 @@
 		}
 		img{
 			width: 						80%;
+			height: 					auto;
 		}
 	}
 	.gallery{

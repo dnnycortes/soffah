@@ -6,26 +6,29 @@
 get_header(); ?>
 <!-- Escupe la ruta hacia la carpeta raiz del templete <?php echo get_template_directory_uri(); ?> -->
 
-
+<?php
+	$productos = get_cat_ID( 'Productos' ); $productos_link = get_category_link( $productos );
+	$sillones = get_cat_ID( 'Sillones' ); $sillones_link = get_category_link( $sillones );
+?>
 <div id="wrapper">
 	<div id="contenido" class="single-product">
 		<div class="main-width">
 			<ul class="breadcrumb">
-				<li><a href="">Productos / </a></li>
-				<li><a href="">Tapicería /</a></li>
-				<li>Sillones</li>
+				<li><a href="<?php echo esc_url( $productos_link ); ?>">Productos / </a></li>
+				<li><a href="<?php echo esc_url( $sillones_link ); ?>">Sillones</a></li>
 			</ul>			
 			<div class="main-content">
 				<!--EMPIEZA EL LOOP-->
 				<?php if(have_posts()) : while(have_posts()) : the_post(); ?>
 					<div class="info">
 						<h2><?php the_title(); ?></h2>
-						<p>Texto simulado de la descripción del producto, materiales, etc.</p>
-						<img src="<?php echo get_template_directory_uri(); ?>/images/products/sillones/senorial-medidas.png">
+						<p><?php echo get_post_meta($post->ID, 'descripcion-producto', true); ?></p>
+						<?php if (class_exists('MultiPostThumbnails')) : MultiPostThumbnails::the_post_thumbnail(get_post_type(), 'size-product'); endif; ?>
 					</div><!-- .info -->
 					<div class="gallery">
 						<div class="main-img">
-							<img src="<?php echo get_template_directory_uri(); ?>/images/products/sillones/senorial.jpg">
+							<img src="">
+							<!-- < //? //php the_post_thumbnail(); ?> -->
 						</div>
 						<!-- Gallery here at the content -->
 						<?php the_content(); ?>

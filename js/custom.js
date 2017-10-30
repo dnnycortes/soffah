@@ -37,4 +37,8 @@ jQuery(function($){
       $('.gallery .main-img img').attr('src', nuevaImg);
     });
 
+    // Display main image in gallery
+    var primerImg = $('.gallery p').first().find('img').attr('src');
+    $('.main-img img').attr('src', primerImg);
+
 });

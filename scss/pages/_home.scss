@@ -124,4 +124,32 @@
 	.fm-form .wdform-label-section{
 		display:						none;
 	}
+	#contact-form{
+		text-align:						center !important;
+		input.wpcf7-text, textarea.wpcf7-textarea{
+			min-width:					600px;
+			font-family: 				$main-font;
+		}
+		input.wpcf7-text{
+			height: 					25px;
+			padding-left:				10px;
+		}
+		textarea.wpcf7-textarea{
+			padding-top: 				10px;
+			padding-left:				10px;
+			margin-bottom:				10px;
+		}
+		input.wpcf7-submit{
+			background:					darken($sec-color, 100%);
+			border:						0;
+			@include					border-radius(5px);
+			color:						$main-color;
+			line-height: 				30px;
+			font-family: 				$main-font;
+			font-size:					16px;
+		}
+		.wpcf7-mail-sent-ok, .wpcf7-response-output{
+			color: 						$main-color;
+		}
+	}
 }

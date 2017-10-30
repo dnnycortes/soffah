@@ -508,6 +508,31 @@ a {
     border-radius: 5px; }
   #contacto .fm-form .wdform-label-section {
     display: none; }
+  #contacto #contact-form {
+    text-align: center !important; }
+    #contacto #contact-form input.wpcf7-text, #contacto #contact-form textarea.wpcf7-textarea {
+      min-width: 600px;
+      font-family: "Quicksand", sans-serif; }
+    #contacto #contact-form input.wpcf7-text {
+      height: 25px;
+      padding-left: 10px; }
+    #contacto #contact-form textarea.wpcf7-textarea {
+      padding-top: 10px;
+      padding-left: 10px;
+      margin-bottom: 10px; }
+    #contacto #contact-form input.wpcf7-submit {
+      background: black;
+      border: 0;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      -ms-border-radius: 5px;
+      border-radius: 5px;
+      color: #FFF;
+      line-height: 30px;
+      font-family: "Quicksand", sans-serif;
+      font-size: 16px; }
+    #contacto #contact-form .wpcf7-mail-sent-ok, #contacto #contact-form .wpcf7-response-output {
+      color: #FFF; }
 
 .subcategory {
   min-height: 500px;
@@ -589,6 +614,20 @@ a {
     .sillones .title img {
       width: 50%;
       margin-left: 65px; }
+  .sillones.loveseats {
+    background-image: url(images/fondo-tapiceria-loveseats.jpg); }
+  .sillones.sofas {
+    background-image: url(images/fondo-tapiceria-sofas.jpg); }
+  .sillones.cabeceras {
+    background-image: url(images/fondo-tapiceria-cabeceras.jpg); }
+  .sillones.taburetes {
+    background-image: url(images/fondo-tapiceria-taburetes.jpg); }
+  .sillones.libreros {
+    background-image: url(images/fondo-carpinteria-libreros.jpg); }
+  .sillones.mesas {
+    background-image: url(images/fondo-carpinteria-mesas.jpg); }
+  .sillones.recamaras {
+    background-image: url(images/fondo-carpinteria-recamaras.jpg); }
 
 .products-catalogue {
   background: #FFF;
@@ -623,7 +662,8 @@ a {
     .single-product .info p {
       margin-bottom: 100px; }
     .single-product .info img {
-      width: 80%; }
+      width: 80%;
+      height: auto; }
   .single-product .gallery {
     float: left;
     width: 69%;

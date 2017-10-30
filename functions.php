@@ -31,6 +31,16 @@ if (function_exists('register_sidebar')) {
 		'before_title'  => '<h2>',
 		'after_title'   => '</h2>'
 	));
+
+	register_sidebar(array(
+		'name' => 'Contacto',
+		'id'   => 'contact-form',
+		'description'   => 'Area de Widget',
+		'before_widget' => '<div id="one" class="two">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h2>',
+		'after_title'   => '</h2>'
+	));
 }
 
 /* Registra los menus del sitio */
@@ -76,7 +86,17 @@ add_theme_support( 'custom-background' );
 /* Añade soporte para poner imágenes principales a los posts */
 if ( function_exists( 'add_theme_support' ) ) { 
 	add_theme_support( 'post-thumbnails' );
-	set_post_thumbnail_size( 338, 193, true ); // Cambia las dimensiones del thumbnail del listado por categoría
+	set_post_thumbnail_size( 500, 9999 ); // Cambia las dimensiones del thumbnail del listado por categoría
+	add_image_size( 'size-product', 326, 9999 ); // 326 pixels wide (and unlimited height)
+}
+
+/* Añade Multiple Image Thumbnail Templates */
+if (class_exists('MultiPostThumbnails')) {
+	new MultiPostThumbnails(array(
+		'label' => 'Producto medidas',
+		'id' => 'size-product',
+		'post_type' => 'post'
+	) );
 }
 
 //Gets post cat slug and looks for single-[cat slug].php and applies it
