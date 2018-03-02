@@ -1,6 +1,6 @@
 // Sillones
 
-.sillones{
+.productos{
 	min-height:							400px;
 	background-attachment:				fixed;
 	background-size:					cover;
@@ -8,7 +8,7 @@
 	background-position:				center;
 	padding:							$padding*6 0;
 	padding-top:						$padding*12;
-	background-image:					url(images/fondo-tapiceria-sillones.jpg);
+	background-image:					url(images/fondo-sillones-y-sofas.png);
 	position:							relative;
 	.title{
 		text-transform: 				uppercase;
@@ -25,6 +25,25 @@
 			margin-left: 				65px;
 		}
 	}
+	&.sillones-y-sofas{
+		background-image: 				url(images/fondo-sillones-y-sofas.png);
+	}
+	&.sillas{
+		background-image:				url(images/fondo-sillas.png);
+	}
+	&.recamaras{
+		background-image: 				url(images/fondo-recamaras.png);
+	}
+	&.mesas-y-libreros{
+		background-image: 				url(images/fondo-mesas-y-libreros.png);
+	}
+	&.comerciales{
+		background-image: 				url(images/fondo-comerciales.png);
+	}
+
+
+
+
 	&.loveseats{
 		background-image: 				url(images/fondo-tapiceria-loveseats.jpg);
 	}
@@ -43,9 +62,6 @@
 	&.mesas{
 		background-image: 				url(images/fondo-carpinteria-mesas.jpg);
 	}
-	&.recamaras{
-		background-image: 				url(images/fondo-carpinteria-recamaras.jpg);
-	}
 }
 
 
@@ -56,6 +72,7 @@
 	.product-thumb{
 		width:							33.33%;
 		float: 							left;
+		margin-bottom: 					20px;
 		h2{
 			color:						$sec-color;
 		}

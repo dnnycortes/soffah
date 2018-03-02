@@ -592,7 +592,7 @@ a {
     .subcategory .product.recamaras img {
       width: 35%; }
 
-.sillones {
+.productos {
   min-height: 400px;
   background-attachment: fixed;
   background-size: cover;
@@ -600,34 +600,42 @@ a {
   background-position: center;
   padding: 60px 0;
   padding-top: 120px;
-  background-image: url(images/fondo-tapiceria-sillones.jpg);
+  background-image: url(images/fondo-sillones-y-sofas.png);
   position: relative; }
-  .sillones .title {
+  .productos .title {
     text-transform: uppercase;
     font-weight: normal;
     color: #FFF;
     position: absolute;
     bottom: 10%; }
-    .sillones .title h2 {
+    .productos .title h2 {
       margin-bottom: 20px;
       font-size: 32px; }
-    .sillones .title img {
+    .productos .title img {
       width: 50%;
       margin-left: 65px; }
-  .sillones.loveseats {
+  .productos.sillones-y-sofas {
+    background-image: url(images/fondo-sillones-y-sofas.png); }
+  .productos.sillas {
+    background-image: url(images/fondo-sillas.png); }
+  .productos.recamaras {
+    background-image: url(images/fondo-recamaras.png); }
+  .productos.mesas-y-libreros {
+    background-image: url(images/fondo-mesas-y-libreros.png); }
+  .productos.comerciales {
+    background-image: url(images/fondo-comerciales.png); }
+  .productos.loveseats {
     background-image: url(images/fondo-tapiceria-loveseats.jpg); }
-  .sillones.sofas {
+  .productos.sofas {
     background-image: url(images/fondo-tapiceria-sofas.jpg); }
-  .sillones.cabeceras {
+  .productos.cabeceras {
     background-image: url(images/fondo-tapiceria-cabeceras.jpg); }
-  .sillones.taburetes {
+  .productos.taburetes {
     background-image: url(images/fondo-tapiceria-taburetes.jpg); }
-  .sillones.libreros {
+  .productos.libreros {
     background-image: url(images/fondo-carpinteria-libreros.jpg); }
-  .sillones.mesas {
+  .productos.mesas {
     background-image: url(images/fondo-carpinteria-mesas.jpg); }
-  .sillones.recamaras {
-    background-image: url(images/fondo-carpinteria-recamaras.jpg); }
 
 .products-catalogue {
   background: #FFF;
@@ -635,7 +643,8 @@ a {
   padding: 30px 0; }
   .products-catalogue .product-thumb {
     width: 33.33%;
-    float: left; }
+    float: left;
+    margin-bottom: 20px; }
     .products-catalogue .product-thumb h2 {
       color: #6d6e70; }
     .products-catalogue .product-thumb img {

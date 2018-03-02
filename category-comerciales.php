@@ -9,19 +9,17 @@ get_header(); ?>
 
 <div id="wrapper">
 	<div id="contenido">
-		<div class="sillones">
+		<div class="productos comerciales">
 			<div class="main-width">
 				<ul class="breadcrumb">
 					<li><a href="">Productos / </a></li>
-					<li><a href="">Tapicería /</a></li>
-					<li>Sillones</li>
+					<li>Comerciales</li>
 				</ul>
 				<div class="title">
-					<h2>Sillones</h2>
-					<img src="<?php echo get_template_directory_uri(); ?>/images/icon-title-sillones.png">
+					<h2>Comerciales</h2>
 				</div><!-- .title -->				
 			</div><!-- .main-width -->
-		</div><!-- .sillones -->
+		</div><!-- .productos -->
 		<div class="products-catalogue">
 			<div class="main-width">
 				<!--EMPIEZA EL LOOP-->
@@ -40,7 +38,7 @@ get_header(); ?>
 			<div class="main-width">
 				<h2>Contacto</h2>
 				<div id="contact-form">
-					<?php wd_form_maker(7, "embedded"); ?>
+					<?php if (dynamic_sidebar('contact-form')) : else : endif; ?>
 				</div><!-- #contact-form -->
 			</div><!-- .main-width -->
 		</div><!-- #contacto -->

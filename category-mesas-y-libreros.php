@@ -9,19 +9,18 @@ get_header(); ?>
 
 <div id="wrapper">
 	<div id="contenido">
-		<div class="sillones taburetes">
+		<div class="productos mesas-y-libreros">
 			<div class="main-width">
 				<ul class="breadcrumb">
 					<li><a href="">Productos / </a></li>
-					<li><a href="">Tapicería /</a></li>
-					<li>Taburetes</li>
+					<li>Mesas y libreros</li>
 				</ul>
 				<div class="title">
-					<h2>Taburetes</h2>
-					<img src="<?php echo get_template_directory_uri(); ?>/images/icon-title-taburetes.png">
+					<h2>Mesas y libreros</h2>
+					<img src="<?php echo get_template_directory_uri(); ?>/images/icon-mesas-y-libreros.png">
 				</div><!-- .title -->				
 			</div><!-- .main-width -->
-		</div><!-- .sillones -->
+		</div><!-- .productos -->
 		<div class="products-catalogue">
 			<div class="main-width">
 				<!--EMPIEZA EL LOOP-->
@@ -40,7 +39,7 @@ get_header(); ?>
 			<div class="main-width">
 				<h2>Contacto</h2>
 				<div id="contact-form">
-					<?php wd_form_maker(7, "embedded"); ?>
+					<?php if (dynamic_sidebar('contact-form')) : else : endif; ?>
 				</div><!-- #contact-form -->
 			</div><!-- .main-width -->
 		</div><!-- #contacto -->
