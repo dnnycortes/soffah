@@ -47,7 +47,7 @@ get_header(); ?>
 			<div class="main-width">
 				<h2>Contacto</h2>
 				<div id="contact-form">
-					<?php wd_form_maker(7, "embedded"); ?>
+					<?php if (dynamic_sidebar('contact-form')) : else : endif; ?>
 				</div><!-- #contact-form -->
 			</div><!-- .main-width -->
 		</div><!-- #contacto -->

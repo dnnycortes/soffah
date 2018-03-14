@@ -20,17 +20,34 @@
 }
 
 .home-products{
-	min-height:				500px;
-	overflow:				hidden;
-	background:				#1d1812;
+	min-height:							500px;
+	overflow:							hidden;
+	background:							#1d1812;
+	position: 							relative;
+	.productos-menu{
+		position:						absolute;
+		top:							100px;
+		left:							15%;
+		z-index:						2;
+		.menu-productos-container, .menu-menu-productos-container{
+			color:						$main-color;
+			text-transform: 			uppercase;
+			margin-left:				45px;
+			ul{
+				li{
+					margin-bottom:		5px;
+					a{
+						color:			$main-color;
+						font-size:      20px;
+					}
+				}
+			}
+		}
+	}
 	h2{
 		font-size: 						34px;
 		text-transform: 				uppercase;
 		color:							$main-color;
-		position:						absolute;
-		left:							12%;
-		top: 							60px;
-		z-index: 						1;
 		font-weight: 					normal;
 	}
 	.product{

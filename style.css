@@ -326,12 +326,19 @@ a {
   padding: 10px; }
   .main-menu .btn-close {
     float: right; }
-  .main-menu .menu li a {
-    color: #FFF;
-    text-transform: uppercase;
-    font-size: 16px; }
-    .main-menu .menu li a:hover {
-      color: #FFF; }
+  .main-menu .menu li {
+    margin-bottom: 20px; }
+    .main-menu .menu li a {
+      color: #FFF;
+      text-transform: uppercase;
+      font-size: 16px; }
+      .main-menu .menu li a:hover {
+        color: #FFF; }
+    .main-menu .menu li .sub-menu {
+      margin-left: 20px;
+      margin-top: 20px; }
+      .main-menu .menu li .sub-menu li {
+        margin-bottom: 5px; }
 
 .breadcrumb {
   overflow: hidden; }
@@ -424,15 +431,26 @@ a {
 .home-products {
   min-height: 500px;
   overflow: hidden;
-  background: #1d1812; }
+  background: #1d1812;
+  position: relative; }
+  .home-products .productos-menu {
+    position: absolute;
+    top: 100px;
+    left: 15%;
+    z-index: 2; }
+    .home-products .productos-menu .menu-productos-container, .home-products .productos-menu .menu-menu-productos-container {
+      color: #FFF;
+      text-transform: uppercase;
+      margin-left: 45px; }
+      .home-products .productos-menu .menu-productos-container ul li, .home-products .productos-menu .menu-menu-productos-container ul li {
+        margin-bottom: 5px; }
+        .home-products .productos-menu .menu-productos-container ul li a, .home-products .productos-menu .menu-menu-productos-container ul li a {
+          color: #FFF;
+          font-size: 20px; }
   .home-products h2 {
     font-size: 34px;
     text-transform: uppercase;
     color: #FFF;
-    position: absolute;
-    left: 12%;
-    top: 60px;
-    z-index: 1;
     font-weight: normal; }
   .home-products .product {
     width: 33.33%;
@@ -648,7 +666,17 @@ a {
     .products-catalogue .product-thumb h2 {
       color: #6d6e70; }
     .products-catalogue .product-thumb img {
-      width: 80%; }
+      width: 80%;
+      height: auto; }
+
+.galeria {
+  text-transform: uppercase;
+  font-weight: normal;
+  color: black;
+  padding-top: 125px; }
+  .galeria .title h2 {
+    margin-bottom: 20px;
+    font-size: 32px; }
 
 .single-product {
   padding-top: 120px; }

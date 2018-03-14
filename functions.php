@@ -46,7 +46,8 @@ if (function_exists('register_sidebar')) {
 /* Registra los menus del sitio */
 register_nav_menus( array(
 	'primary' => 'Menu Principal',
-	'secondary' => 'Menu Servicios'
+	'secondary' => 'Menu Servicios',
+	'productos' => 'Menu Productos'
 ) );
 
 /* Registra los javascripts del sitio */
@@ -87,7 +88,8 @@ add_theme_support( 'custom-background' );
 if ( function_exists( 'add_theme_support' ) ) { 
 	add_theme_support( 'post-thumbnails' );
 	set_post_thumbnail_size( 500, 9999 ); // Cambia las dimensiones del thumbnail del listado por categoría
-	add_image_size( 'size-product', 326, 9999 ); // 326 pixels wide (and unlimited height)
+	add_image_size( 'size-product', 326, 9999 ); // 326 pixels width (and unlimited height)
+	add_image_size( 'thumbnail-product', 300, 999 ); 
 }
 
 /* Añade Multiple Image Thumbnail Templates */
@@ -96,7 +98,12 @@ if (class_exists('MultiPostThumbnails')) {
 		'label' => 'Producto medidas',
 		'id' => 'size-product',
 		'post_type' => 'post'
-	) );
+	));
+	new MultiPostThumbnails(array(
+		'label' => 'Producto thumbnail',
+		'id' => 'thumbnail-product',
+		'post_type' => 'post'
+	));
 }
 
 //Gets post cat slug and looks for single-[cat slug].php and applies it

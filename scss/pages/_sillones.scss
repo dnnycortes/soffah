@@ -78,6 +78,20 @@
 		}
 		img{
 			width: 						80%;
+			height: 					auto;
+		}
+	}
+}
+
+.galeria{
+	text-transform: 					uppercase;
+	font-weight: 						normal;
+	color:								black;
+	padding-top: 						125px;
+	.title{
+		h2{
+			margin-bottom:				$margin*2;
+			font-size: 					32px;
 		}
 	}
 }

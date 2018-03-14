@@ -25,9 +25,9 @@ get_header(); ?>
 			<div class="main-width">
 				<!--EMPIEZA EL LOOP-->
 				<?php if(have_posts()) : while(have_posts()) : the_post(); ?>
-					<a class="product-thumb" href="javascript:void(0);">
+					<a class="product-thumb" href="<?php the_permalink(); ?>">
 						<h2><?php the_title(); ?> </h2>
-						<img src="<?php echo get_template_directory_uri(); ?>/images/products/sillones/senorial.jpg">
+						<?php if (class_exists('MultiPostThumbnails')) : MultiPostThumbnails::the_post_thumbnail(get_post_type(), 'thumbnail-product'); endif; ?>
 					</a>
 				<?php endwhile; else: ?>
 					<p><?php _e('Lo sentimos, ningún post cumple con los criterios de búsqueda.'); ?></p>

@@ -9,31 +9,22 @@ get_header(); ?>
 
 <div id="wrapper">
 	<div id="contenido">
-		<div class="productos comerciales">
+		<div class="galeria">
 			<div class="main-width">
-				<ul class="breadcrumb">
-					<li><a href="">Productos / </a></li>
-					<li>Comerciales</li>
-				</ul>
 				<div class="title">
-					<h2>Comerciales</h2>
+					<h2>Galería</h2>
 				</div><!-- .title -->				
 			</div><!-- .main-width -->
-		</div><!-- .productos -->
-		<div class="products-catalogue">
-			<div class="main-width">
+		</div><!-- .galeria -->
+		<div class="main-width">
 				<!--EMPIEZA EL LOOP-->
 				<?php if(have_posts()) : while(have_posts()) : the_post(); ?>
-					<a class="product-thumb" href="<?php the_permalink(); ?>">
-						<h2><?php the_title(); ?> </h2>
-						<?php if (class_exists('MultiPostThumbnails')) : MultiPostThumbnails::the_post_thumbnail(get_post_type(), 'thumbnail-product'); endif; ?>
-					</a>
+					<?php the_content(); ?> 
 				<?php endwhile; else: ?>
 					<p><?php _e('Lo sentimos, ningún post cumple con los criterios de búsqueda.'); ?></p>
 				<?php endif; ?>
 				<!--TERMINA EL LOOP-->
-			</div><!-- .main-width -->
-		</div><!-- .products-catalogue -->
+		</div><!-- .main-width -->
 		<div id="contacto">
 			<div class="main-width">
 				<h2>Contacto</h2>

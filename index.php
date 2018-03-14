@@ -18,30 +18,18 @@ get_header(); ?>
 	<div id="contenido">
 		<!--EMPIEZA EL LOOP-->
 			<div class="home-products">
-				<h2><?php
-					$cat = get_term_by( 'slug', 'productos', 'category');
-					echo $cat->name;
-					?></h2>
+				<div class="productos-menu">
+					<h2><?php $cat = get_term_by( 'slug', 'productos', 'category'); echo $cat->name; ?></h2>
+					<?php wp_nav_menu(array('theme_location' => 'productos'));?>
+				</div>
 				<div class="product tapiceria">
 					<img src="<?php echo get_template_directory_uri(); ?>/images/productos-tapiceria.jpg">
-					<h3><?php
-					$cat = get_term_by( 'slug', 'tapiceria', 'category');
-					echo $cat->name;
-					?></h3>
 				</div><!-- .product -->
 				<div class="product carpinteria">
 					<img src="<?php echo get_template_directory_uri(); ?>/images/productos-carpinteria.jpg">
-					<h3><?php
-					$cat = get_term_by( 'slug', 'carpinteria', 'category');
-					echo $cat->name;
-					?></h3>
 				</div><!-- .product -->
 				<div class="product superficie">
 					<img src="<?php echo get_template_directory_uri(); ?>/images/productos-superficie.jpg">
-					<h3><?php
-					$cat = get_term_by( 'slug', 'superficie-solida', 'category');
-					echo $cat->name;
-					?></h3>
 				</div><!-- .product -->
 			</div><!-- .home-products -->
 			<div class="home-pasion">
